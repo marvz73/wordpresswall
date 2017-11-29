@@ -1,0 +1,478 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.pull-right{
+ 	float: right;
+}
+
+.pull-left{
+	float: left;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+.no-margin{
+	margin: 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.full-width{
+    width: 100% !important;
+}
+
+.inset-top-1{ margin-top: 0.2rem !important; }
+.inset-top-2{ margin-top: 0.5rem !important; }
+.inset-top-3{ margin-top: 0.8rem !important; }
+.inset-top-4{ margin-top: 1rem !important; }
+.inset-top-5{ margin-top: 1.5rem !important; }
+.inset-top-6{ margin-top: 2rem !important; }
+.inset-top-7{ margin-top: 3rem !important; }
+.inset-top-8{ margin-top: 4rem !important; }
+.inset-top-9{ margin-top: 5rem !important; }
+
+
+/*Shift Wall Post Form*/
+#shiftwall-container{
+    /*max-width: 560px;*/
+    margin: 0 auto;
+}
+
+#form-wrap{
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 5px -1px #ccc;
+    -moz-box-shadow: 0px 0px 5px -1px #ccc;
+    -o-box-shadow: 0px 0px 5px -1px #ccc;
+        box-shadow: 0px 0px 5px -1px #ccc;
+}
+
+#form-wrap > .field > textarea{
+    border: 0;
+}
+
+#form-actions{
+    padding: 0;
+    background: #f0f0f0;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+#form-attachment{
+    margin-top: 0.5rem;
+}
+
+#camera{
+    padding: 0;
+    height: 280px;
+    position: relative;
+}
+
+.camera-loading{
+    height: 100%;
+    width: 100%;
+    position: absolute !important;
+}
+
+#camera .video-js{
+    width: 100%;
+    height: 100%;
+}
+
+#snap{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 999;
+}
+
+#feed-post{
+	margin: 0em;
+    -webkit-appearance: none;
+    tap-highlight-color: rgba(255, 255, 255, 0);
+    padding: 0.78571429em 1em;
+    background: #FFFFFF;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+    outline: none;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 0.28571429rem;
+    box-shadow: 0em 0em 0em 0em transparent inset;
+    -webkit-transition: color 0.1s ease, border-color 0.1s ease;
+    transition: color 0.1s ease, border-color 0.1s ease;
+    font-size: 1em;
+    line-height: 1.2857;
+    resize: vertical;
+}
+
+[contenteditable]:empty:not(:focus)::before{
+    content:attr(data-ph);
+    color: #ccc;
+}
+
+button.attachment-close{
+    position: absolute;
+    z-index: 999;
+    top: 6px;
+    right: 6px;
+    display: none !important;
+}
+
+div.photos:hover .attachment-close,
+div.attachments:hover .attachment-close{
+    display: block !important;
+}
+
+div.video .attachment-play{
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    color: #fff;
+}
+
+
+/*Shift Wall Feeds*/
+.feed-new-post{
+    cursor: pointer;
+}
+
+.ui.feed{
+    background: #fff;
+    box-shadow: 0px 0px 5px -1px #ccc;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    position: relative;
+}
+
+.ui.feed > .event{
+    padding: 1rem 1rem 0.5rem 1rem !important;
+    position: relative;
+}
+
+.ui.feed .author{
+    text-transform: capitalize;
+}
+
+.ui.feed > .event > .label img{
+	border-radius: 0.25rem;
+}
+
+.ui.feed > .event > .content .extra{
+    max-width: 100% !important;
+    margin: 1rem 0;
+}
+
+.ui.feed .attachment-file.huge.icon{
+    vertical-align: super;
+}
+
+.ui.feed > .event > .dropdown{
+    position: absolute;
+    right: 13px;
+    padding: 1rem;
+    display: none;
+}
+
+.ui.feed > .event:hover .dropdown{
+    display: inline-block;
+}
+
+.ui.feed > .event > .ui.dropdown .menu{
+    right: 0;
+    left: initial;
+}
+
+.ui.feed .feed-edit-action{
+    margin: 1rem 0;
+}
+
+.ui.feed .feed-edit{
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+.showLess{
+    height: 15.3333rem;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 0em;
+    border-left: none;
+    font-size: 1em;
+    line-height: 1.4285em;
+}
+
+/*Wall Feed Comments*/
+#commnetsFeed{
+    padding: 1.5rem 1rem 1.5rem 3.6rem; 
+    background: #fbfbfb;
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.ui.comments{
+	max-width: 100%;
+}
+
+.ui.comments > .event > .dropdown {
+    position: absolute;
+    right: 13px;
+    padding: 0rem;
+    display: none;
+}
+
+.comment.event:hover .dropdown{
+    display: inline-block;
+}
+
+div.text > p:last-child{
+    margin: 0;
+}
+
+.ui.comments .comment .author{
+    color: #00b0cc;
+}
+
+.ui.bordered.image > img{
+    border: 0 !important;
+    margin: 0;
+    padding: 0;
+}
+
+.ui.bordered.image > span > i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ccc;
+}
+
+.ui.bordered.image{
+    max-height: 150px;
+    height: 150px !important;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background: #fff;
+    text-align: center;
+}
+
+.ui.comments .commentDelete{
+    float: right;
+    margin-right: 10px;
+    font-weight: bold;
+    display: none;
+}
+
+.ui.comments .content:hover .commentDelete{
+    display: inline-block;
+}
+
+.ui.comments .like.active i{
+    color: #EF404A;
+}
+
+
+/*Dropdown*/
+.ui.dropdown.open .menu{
+    display: inline-block;
+}
+
+
+/*Contenteditable*/
+.ui.feed div[contenteditable]{
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+    margin-right: 1.3rem;
+}
+
+.ui.comments div[contenteditable]{
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.ui.feed .feed-editing div[contenteditable],
+.ui.comments .comment-editing div[contenteditable]{
+    border: 1px solid rgba(153, 153, 153, 0.15);
+    background-color: rgba(238, 238, 238, 0.23);
+    padding: 0.5rem;
+}
+
+.ui.feed div[contenteditable] p,
+.ui.comments div[contenteditable] p{
+    margin: 0;
+}
+
+.feed-edit-actions{
+    margin-top: 0.5rem !important;
+}
+
+.comment-edit-actions{
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*HACK FOR THIS THEME*/
+body.page-two-column #primary .entry-content,
+body.page-two-column #primary .entry-header{
+    float: none !important;
+    width: 100% !important;
+}
+
+
+
+/*--- Chat Style --- */
+
+#shift-wall-message{
+    
+    /*display: none;*/
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 230px;
+    background: #fff;
+    height: 26rem;
+    max-height: 26rem;
+}
+
+.message-multi{
+    height: 100%;
+}
+
+.message-wrapper{
+    height: 100%;
+    float: right;
+    width: 300px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-right: 10px;
+}
+
+#shift-wall-message a.message-close{
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    color: #fff;
+}
+
+.message-title{
+    padding: 0.5rem 1rem;
+    background: #0084ff;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.message-inputbox{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+
+.messages{
+    max-height: 20.45rem;
+    overflow: scroll;
+    padding-bottom: 0.5rem;
+}
+
+#shift-wall-message ul{
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+
+.message-avatar{
+    width: 27px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 30px;
+    margin-top: -4px;
+}
+
+#shift-wall-message ul li{
+  display:inline-block;
+  clear: both;
+  margin-bottom: 5px;
+  font-size: 0.85714286em;
+}
+
+.him{
+  float: left;
+}
+
+#shift-wall-message ul li.me,
+#shift-wall-message ul li.him span{
+    background: #eee;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+#shift-wall-message ul li.me{
+  float: right;
+  background: #0084ff;
+  color: #fff;
+}
+
+.him + #shift-wall-message ul li.me{
+  border-bottom-right-radius: 5px;
+}
+
+#shift-wall-message ul li.me + #shift-wall-message ul li.me{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#shift-wall-message ul li.me:last-of-type {
+  border-bottom-right-radius: 30px;
+}
+
+
+
+/*Users*/
+#shift-wall-message-users{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 230px;
+    background: #fff;
+    z-index: 999;
+    border: 1px solid #ccc;
+}
+
+.shift-wall-users-list{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: scroll;
+    height: 100%;
+}
